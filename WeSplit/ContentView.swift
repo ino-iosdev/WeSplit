@@ -9,13 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Form {
+                Section {
+                    Text("Hello Jeff!")
+                }
+                Section {
+                    Text("Hello Jeff!")
+                    Text("Hello Jeff!")
+                }
+                Section {
+                    Text("Hello Jeff!")
+                    Text("Hello Jeff!")
+                    Text("Hello Jeff!")
+                }
+            }
+            .navigationTitle("Greeting to Jeff")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
     }
 }
 
